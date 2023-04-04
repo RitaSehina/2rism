@@ -1,0 +1,29 @@
+.custom-select-container {
+  padding-top: 5px;
+}
+
+.custom-select-panel {
+  font-size: 14px;
+  top: calc(100% + 27px);
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(8 41 55 / 34%);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.custom-select-option {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.custom-select-option.is-selected {
+  font-weight: 600;
+}
+
+.custom-select-option.is-selected::before {
+  content: none;
+}
+
+.custom-select-option.has-focus {
+  background-color: #ebe5f9;
+}
