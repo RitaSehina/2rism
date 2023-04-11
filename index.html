@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2rism</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="./libs/autoComplete/css/autoComplete.01.css " />
     <link rel="stylesheet" href="./libs/custom-select/css/custom-select.css" />
     <!-- <link rel="stylesheet" href="./libs/easepick/easpick.min.css" /> -->
@@ -42,15 +43,22 @@
               <a href="#" class="nav-list__link">Contact</a>
             </li>
           </ul>
-          <div class="user">
-            <div class="user__content">
-              <span class="user__greeting">Holla,</span>
-              <span class="user__name">Ales Nesetril</span>
-            </div>
-            <div class="user__avatar">
-              <img class="user__avatar-img" src="./img/header/user.jpg" alt="image" />
+
+          <div class="nav__user">
+            <div class="user">
+              <div class="user__content">
+                <span class="user__greeting">Holla,</span>
+                <span class="user__name">Ales Nesetril</span>
+              </div>
+              <div class="user__avatar">
+                <img class="user__avatar-img" src="./img/header/user.jpg" alt="image" />
+              </div>
             </div>
           </div>
+
+          <button class="mobile-nav-btn">
+            <div class="nav-icon"></div>
+          </button>
         </nav>
 
         <div class="header__content">
@@ -105,6 +113,19 @@
       </div>
     </header>
 
+    <div class="mobile-nav-fade"></div>
+    <div class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Restaurants</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Activities</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
     <!-- Main -->
     <main class="main">
       <!-- Popular -->
@@ -113,7 +134,7 @@
           <header class="section__header">
             <h2 class="title-1">Popular Destinations</h2>
           </header>
-          <div class="section__cards section__cards--popular">
+          <div class="section__cards section__cards--6-in-row">
             <article class="card">
               <a href="#" class="card__link"></a>
               <img class="card__image" src="./img/popular/01.jpg" alt="Card" />
@@ -246,7 +267,7 @@
           <div class="section__cards section__cards--2-in-row">
             <article class="card card--wide">
               <a href="#" class="card__link"></a>
-              <img class="card__image card__image--no-margin" src="./img/tips/01.jpg" alt="Card" />
+              <img class="card__image card__image--no-margin card__image--h100" src="./img/tips/01.jpg" alt="Card" />
 
               <div class="card__desc">
                 <h3 class="card__title card__title--big">East Village Ice Cream Crawl</h3>
@@ -264,7 +285,7 @@
 
             <article class="card card--wide">
               <a href="#" class="card__link"></a>
-              <img class="card__image card__image--no-margin" src="./img/tips/02.jpg" alt="Card" />
+              <img class="card__image card__image--no-margin card__image--h100" src="./img/tips/02.jpg" alt="Card" />
 
               <div class="card__desc">
                 <h3 class="card__title card__title--big">Brooklyn Bridge cinematic photo walk</h3>
@@ -447,6 +468,7 @@
     <script src="./libs/autoComplete/autoComplete.min.js"></script>
     <script src="./libs/custom-select/custom-select.min.js"></script>
     <script src="./js/input-dest.js"></script>
+    <script src="./js/mobile-nav.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
